@@ -390,6 +390,12 @@ footer a.nav-link:hover,
     padding: 0.938rem;
   }
 
+  .catalogo-wrapper
+  {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
   .d-flex.address {
     display: none !important;
   }
@@ -445,6 +451,10 @@ footer a.nav-link:hover,
     aspect-ratio: 1 / 1;
   }
   
+  .numeri-responsive {
+    font-size: small;
+  
+  }
   .main-left {
     order: 2;
   }
