@@ -6,4 +6,4 @@ Problemi:
 * no gerarchia visiva
 * mancanza di una navigation bar / header chiaro 
 
-Focus su UI moderna con miglioramento della gerachia visiva, UX, e accessibilità.
+Focus su UI moderna con miglioramento della gerachia visiva, UX e accessibilità.
