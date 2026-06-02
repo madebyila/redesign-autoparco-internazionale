@@ -195,6 +195,7 @@ ul {
 .placeholder {
   background-color: var(--hover);
   min-height: 250px;
+  width: 100%;
 }
 
 .placeholder:hover {
