@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+:root {
+
+  --bg-color: #F0F0F0;
+  --bg-sezione-alternata: #FDFDFD;
+  --bs-secondary-color: #898e92;
+  --navbar-color: #1F4E79;
+  --card: #FFFFFF;
+  --azzurro: #E8EDFF;
+  --text: #212529;
+  --muted: #afadad; /*testo muted*/
+
+  --btn-primary: #04386A; 
+  --btn-primary-hover: #2F6FA8;
+  --disponibilita: #9DE297;
+  --accent: #E56F00;
+  --accent-hover: #F28C28; 
+  --hover: #d1caca;
+  --bs-font-sans-serif: "Google Sans Flex", sans-serif; /*font principale*/
+
+
+  --bs-breadcrumb-divider: ">";
+
+}
+
+
+
+body {
+  color: var(--text);
+}
+
+body a,
+ol {
+  color: var(--btn-primary);
+}
+
+ol a,
+ul a {
+  text-decoration: none;
+}
+
+body a:hover {
+  color: var(--accent);
+}
+
+.breadcrumb-item a{
+  text-decoration: underline;
+}
+
+.msg {
+  background-color: var(--bg-color);
+  color: var(--text);
+  padding: 3px;
+}
+
+.msg p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.address {
+  background-color: var(--azzurro);
+  color: var(--text);
+}
+
+.custom-navbar {
+  background-color: var(--navbar-color);
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .nav-link.active {
+  color: var(--card);
+}
+
+.navbar .btn-primary {
+  --bs-btn-bg: var(--btn-primary);
+  --bs-btn-border-color: var(--btn-primary);
+}
+
+.navbar .btn-primary:hover {
+  --bs-btn-hover-bg: var(--btn-primary-hover);
+  --bs-btn-hover-border-color: var(--btn-primary-hover);
+}
+
+.text-bg-warning p {
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.btn-primary, button {
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-active-bg: var(--accent-hover);
+
+}
+
+.btn-primary:hover {
+  --bs-btn-hover-bg: var(--accent-hover);
+  --bs-btn-hover-border-color: var(--accent-hover);
+}
+
+.btn-outline-primary {
+  --bs-btn-bg: var(--bg-color);
+  --bs-btn-border-color: var(--accent);
+  color: var(--text);
+  --bs-btn-active-bg: var(--accent-hover);
+}
+
+.btn-outline-primary:hover {
+  --bs-btn-hover-bg: var(--accent-hover);
+  --bs-btn-hover-border-color: var(--accent-hover);
+}
+
+.bi-check2-circle {
+  font-size: 30px;
+}
+
+ul {
+  margin-top: 25px;
+}
+
+.hero-img {
+  max-width: 600px;
+  height: auto;
+}
+
+.hero {
+  background-color: var(--bg-sezione-alternata);
+}
+
+
+.servizi,
+.catalogo .card,
+.catalogo .card .card-title,
+.catalogo .card .card-body,
+.spedizione,
+.contatti,
+.orari {
+  background-color: var(--bg-color);
+}
+
+.catalogo p {
+  font-size: 16px;
+}
+
+.brand p {
+  font-size: smaller;
+}
+
+.catalogo a {
+  text-decoration: none;
+}
+
+
+.catalogo .card:hover {
+  box-shadow: var(--bs-secondary-color) 0px 2px 3px;
+  transition: 0.4s;
+}
+
+
+.card-body {
+  background-color: var(--card);
+  color: var(--text);
+  border: none;
+}
+
+.card-title {
+  font-weight: 800;
+  /*oppure 600*/
+  font-size: 26px;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.card-img-top {
+  max-width: 100px;
+  height: auto;
+}
+
+.brand {
+  background-color: var(--azzurro);
+}
+
+.brand .img-fluid {
+  max-width: auto;
+  max-height: 100px;
+  margin: 20px;
+}
+
+.placeholder {
+  background-color: var(--hover);
+  height: 250px;
+  width: 100%;
+}
+
+.placeholder:hover {
+  cursor: auto;
+}
+
+.contatti .bi {
+  background-color: var(--navbar-color);
+  padding: 0.5rem 0.65rem;
+  margin-right: 0.5rem;
+  color: var(--card);
+}
+
+.contatti .border-bottom,
+.orari .border-bottom {
+  --bs-border-color: var(--text);
+}
+
+.etichetta {
+  font-size: smaller;
+}
+
+.valori {
+  background-color: var(--azzurro);
+}
+
+.bi-shield-check,
+.bi-people-fill,
+.bi-headset {
+  color: var(--bs-secondary-color);
+}
+
+.card-numeri {
+  background-color: var(--navbar-color);
+  color: var(--azzurro);
+}
+
+.filtri {
+  background-color: var(--bg-color);
+}
+
+.filtri .btn-primary {
+  --bs-btn-bg: var(--navbar-color);
+  --bs-btn-border-color: var(--navbar-color);
+  --bs-btn-hover-bg: var(--btn-primary-hover);
+  --bs-btn-hover-border-color: var(--btn-primary-hover);
+  color: var(--azzurro);
+}
+
+.filtri .btn-secondary,
+.filtri a {
+  color: var(--text);
+}
+
+.filtri .zero {
+  --bs-btn-bg: none;
+  --bs-btn-border-color: var(--hover);
+  --bs-btn-hover-bg: var(--hover);
+  --bs-btn-hover-border-color: var(--hover);
+}
+
+.dropdown-toggle {
+  background-color: var(--card);
+  --bs-btn-hover-bg: var(--card);
+  --bs-btn-border-color: var(--hover);
+  --bs-btn-hover-border-color: var(--text);
+  --bs-btn-active-bg: var(--card);
+  --bs-btn-active-border-color: var(--hover);
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:active,
+.dropdown-toggle:focus {
+  color: var(--text);
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: var(--card);
+  --bs-dropdown-link-hover-bg: var(--azzurro);
+}
+
+
+.testo-secondario,
+.prodotto .etichetta {
+  font-size: 13px;
+  color: var(--bs-secondary-color);
+}
+
+.prodotto .testo-secondario {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.pagination {
+  --bs-pagination-color: var(--text);
+  --bs-pagination-focus-border-color: var(--navbar-color);
+  --bs-pagination-active-border-color: var(--navbar-color);
+  --bs-pagination-active-bg: var(--navbar-color);
+}
+
+.disponibilita {
+  width: fit-content;
+  background-color: var(--disponibilita);
+  color: var(--text);
+  font-size: smaller;
+  padding: 5px 10px;
+  border-radius: 0.375rem;
+}
+
+.tab-pane {
+  background-color: var(--bg-color);
+  padding: 20px;
+}
+
+.tab .nav-link {
+  color: var(--text);
+}
+
+.tab-pane ul {
+  width: 40%;
+}
+
+.tab-pane ul li {
+  border-bottom: 1px solid var(--hover);
+}
+
+.specifiche ul li,
+.compatibilita ul li {
+  border-bottom: none;
+}
+
+.banner {
+  border: 1px solid var(--bs-secondary-color);
+  border-radius: 0.375rem;
+  width: 300px;
+  font-size: 13px;
+}
+
+.ricambio .bi {
+  font-size: 40px;
+  color: var(--text);
+}
+
+.mappa {
+  width: 100%;
+}
+
+
+
+/*.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: var(--hover);
+  color: var(--text)
+}*/
+
+footer {
+  background-color: var(--navbar-color);
+  width: 100vw;
+  color: var(--bg-color);
+}
+
+footer h5 {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+footer h4 {
+  color: var(--accent);
+}
+
+footer a.nav-link {
+  color: var(--bg-color);
+  text-decoration: underline;
+}
+
+footer a.nav-link:hover,
+.custom-navbar .nav-link:hover {
+  color: var(--accent-hover);
+}
+
+.crediti {
+  font-size: smaller;
+  border-top: 1px solid var(--card);
+  margin-top: 20px;
+  padding-top: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .d-flex.address {
+    display: none !important;
+  }
+
+  .navbar-toggler {
+    color: var(--azzurro);
+    border-color: var(--muted);
+    padding: 10px;
+
+  }
+
+  .navbar-toggler:focus {
+    color: var(--btn-primary);
+    border: none;
+
+  }
+
+  body a {
+    text-decoration: none;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+  .brand .img-fluid {
+    max-width: auto;
+    max-height: 80px;
+  }
+
+  .etichetta {
+    font-size: smaller;
+  }
+
+  .tab-pane ul {
+    width: 100%;
+  }
+
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner {
+    width: 100%;
+    border: none
+  }
+  
+  .main-left {
+    order: 2;
+  }
+
+  .aside-right {
+    order: 1;
+    background-color: var(--bg-color);
+    border: 1px solid var(--hover);
+  }
+
+  .btn.btn-primary.btn-collapse {
+    color: var(--text);
+    border: var(--bg-color);
+    background-color: var(--bg-color);
+    --bs-btn-color: var(--text);
+    --bs-btn-active-color: var(--text);
+    --bs-btn-active-bg: var(--bg-color);
+  }
+
+
+  .btn.btn-primary.btn-collapse:focus {
+    border: 1px solid var(--hover);
+  }
+
+}
