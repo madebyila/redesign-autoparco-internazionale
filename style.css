@@ -382,6 +382,14 @@ footer a.nav-link:hover,
 }
 
 @media (max-width: 992px) {
+  .footer-responsive {
+    padding: 1.25rem !important;
+  }
+
+  .catalogo {
+    padding: 0.938rem;
+  }
+  
   .d-flex.address {
     display: none !important;
   }
