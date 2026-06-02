@@ -391,6 +391,7 @@ footer a.nav-link:hover,
 
   .catalogo {
     padding: 0.938rem;
+    padding-top: 0 !important;
   }
 
   .catalogo-wrapper
@@ -398,7 +399,7 @@ footer a.nav-link:hover,
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
-
+  
   .d-flex.address {
     display: none !important;
   }
@@ -438,14 +439,11 @@ footer a.nav-link:hover,
   .tab-pane ul {
     width: 100%;
   }
-
-
  
   .banner-container {
-    
     align-items: flex-start !important;
-    
   }
+
   .banner {
     border: none;
     text-align: left;
