@@ -389,7 +389,7 @@ footer a.nav-link:hover,
   .catalogo {
     padding: 0.938rem;
   }
-  
+
   .d-flex.address {
     display: none !important;
   }
@@ -439,6 +439,10 @@ footer a.nav-link:hover,
   .banner {
     width: 100%;
     border: none
+  }
+
+  .card {
+    aspect-ratio: 1 / 1;
   }
   
   .main-left {
